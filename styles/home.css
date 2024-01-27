@@ -1,0 +1,296 @@
+/* MAIN */
+
+main {
+  max-width: 1600px;
+  text-align: center;
+}
+
+.primary-section {
+  position: relative;
+  height: calc(100vh - 6rem);
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.primary-section-video-bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.primary-section-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.primary-section-content > div {
+  margin-top: calc((100vh / 10) * 2);
+}
+
+.h1-welcome-to {
+  font-size: 1.5rem;
+  letter-spacing: 0.5ch;
+}
+
+.h1-mindoro {
+  display: block;
+  font-family: Candara;
+  font-size: 10rem;
+  line-height: 1;
+}
+
+.yellow-font {
+  color: rgb(255, 208, 79);
+}
+
+.explore-now-link {
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  margin-top: calc((100vh / 10) * 1.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore-now-link:hover {
+  background-color: rgb(255, 208, 79);
+  color: #fff;
+}
+
+.section-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+  position: relative;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Candara;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 2rem;
+}
+
+.feature > p {
+  z-index: 1;
+}
+
+.featured-travels {
+  background-image: url("../media/home/home_featuredtravels.jpg");
+}
+
+.where-to-go {
+  background-image: url("../media/home/home_wheretogo.jpg");
+}
+
+.food-delicacies {
+  background-image: url("../media/home/home_fooddelicacies.jpg");
+}
+
+.featured-travels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 13, 13);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-travels:hover::before {
+  opacity: 0.4;
+}
+
+.where-to-go::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.where-to-go:hover::before {
+  opacity: 0.2;
+}
+
+.food-delicacies::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(96, 21, 167);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.food-delicacies:hover::before {
+  opacity: 0.3;
+}
+
+.section-video-2 {
+  height: calc(100vh - 6rem);
+}
+
+.accreditations-container {
+  height: 6rem;
+  background-color: rgb(255, 196, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+.accreditations-container > img {
+  max-height: 4rem;
+}
+
+.cebu-pacific-logo {
+  max-width: calc(((100% / 19.25) * 4.5) - 2rem);
+}
+
+.phil-airlines-logo {
+  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
+}
+
+.twogo-logo {
+  max-width: calc(((100% / 19.25) * 2.25) - 2rem);
+}
+
+.love-the-phil-logo {
+  max-width: calc(((100% / 19.25) * 2.25) - 2rem);
+}
+
+.bdo-logo {
+  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
+}
+
+.kku-travel-logo {
+  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
+}
+
+.section-bisita-de-mindoro {
+  position: relative;
+  background: url("../media/home/home_bg.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 1rem 0 4rem;
+}
+
+.section-bisita-de-mindoro-content {
+  position: relative;
+  z-index: 1;
+}
+
+.section-bisita-de-mindoro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.bisita-de-mindoro-text {
+  font-family: Candara;
+  font-size: 7rem;
+}
+
+.section-bisita-de-mindoro > p {
+  font-size: 1.5rem;
+}
+
+.bisita-de-mindoro-gallery {
+  width: calc((100% / 12) * 4);
+  margin: 2rem auto 0;
+}
+
+.bisita-de-mindoro-gallery-item {
+  position: relative;
+  height: 18rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid #000;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.bisita-de-mindoro-gallery-item:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.bisita-de-mindoro-gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bisita-de-mindoro-gallery-item:hover::before {
+  opacity: 0.7;
+}
+
+.bisita-de-mindoro-gallery-item > p {
+  position: relative;
+  opacity: 0;
+  cursor: default;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.bisita-festival {
+  background-image: url(../media/home/home_bisita1.jpg);
+}
+
+.bisita-turtle {
+  background-image: url(../media/home/home_bisita2.jpg);
+}
+
+.bisita-boat {
+  background-image: url(../media/home/home_bisita3.jpg);
+}
+
+.bisita-church {
+  background-image: url(../media/home/home_bisita4.jpg);
+}
