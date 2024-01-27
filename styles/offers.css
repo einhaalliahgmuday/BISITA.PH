@@ -1,0 +1,51 @@
+.offers-container {
+  position: relative;
+  padding: 1px 0 2rem;
+}
+
+.offers-bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.offers-content {
+  position: relative;
+  z-index: 1;
+}
+
+.discount-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 50% 0 3rem;
+  padding: 0 2.5rem;
+}
+
+.discount-item {
+  height: 16rem;
+  background-position: top left;
+  background-size: cover;
+  border: 8px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20%;
+}
+
+.discount-student {
+  background-image: url(../media/offers/Students.jpg);
+}
+
+.discount-pwd {
+  background-image: url(../media/offers/PWD.jpg);
+}
+
+.discount-seniors {
+  background-image: url(../media/offers/Seniors.jpg);
+}
