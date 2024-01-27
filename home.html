@@ -99,15 +99,19 @@
             </span>
           </p>
           <div class="bisita-de-mindoro-gallery">
-            <div class="bisita-de-mindoro-gallery-item bisita-festival">
-              <p>
+            <div
+              class="dark-overlay-hover bisita-de-mindoro-gallery-item bisita-festival"
+            >
+              <p class="dark-overlay-hover-text">
                 Watch colorful festivals such as the Bahaghari Festival and
                 Sulyog Festival For something cheery, take the time to watch
                 colorful festivals that Oriental Mindoro has to offer.
               </p>
             </div>
-            <div class="bisita-de-mindoro-gallery-item bisita-turtle">
-              <p>
+            <div
+              class="dark-overlay-hover bisita-de-mindoro-gallery-item bisita-turtle"
+            >
+              <p class="dark-overlay-hover-text">
                 One of the most diverse marine ecosystems in the world is found
                 in the province — the Verde Island Passage. It stretches through
                 the coasts of Batangas, Mindoro, Romblon and Marinduque in 10
@@ -118,16 +122,20 @@
                 giant clams, flying fish and luminous plankton.
               </p>
             </div>
-            <div class="bisita-de-mindoro-gallery-item bisita-boat">
-              <p>
+            <div
+              class="dark-overlay-hover bisita-de-mindoro-gallery-item bisita-boat"
+            >
+              <p class="dark-overlay-hover-text">
                 Thousands of local fishers rely on Yellowfin tuna for their
                 livelihood. In Occidental Mindoro, tuna fishing is a way of
                 life. Over 1000 fishing vessels benefit from the abundant marine
                 life.
               </p>
             </div>
-            <div class="bisita-de-mindoro-gallery-item bisita-church">
-              <p>
+            <div
+              class="dark-overlay-hover bisita-de-mindoro-gallery-item bisita-church"
+            >
+              <p class="dark-overlay-hover-text">
                 The common religions on the island fall under Christianity. The
                 religion of the indigenous Mangyan population is animism. Though
                 they are into animism as a religion, the Catholic Church in some
@@ -151,23 +159,6 @@
         </ul>
       </nav>
     </footer>
-    <script>
-      const bisitaGalleryItem = document.querySelectorAll(
-        ".bisita-de-mindoro-gallery-item"
-      );
-
-      for (let i = 0; i < bisitaGalleryItem.length; i++) {
-        let galleryItem = bisitaGalleryItem[i];
-        let galleryItemText = galleryItem.querySelector("p");
-
-        galleryItem.addEventListener("mouseenter", function () {
-          galleryItemText.style.opacity = "1";
-        });
-
-        galleryItem.addEventListener("mouseleave", function () {
-          galleryItemText.style.opacity = "0";
-        });
-      }
-    </script>
+    <script src="scripts/global.js"></script>
   </body>
 </html>
