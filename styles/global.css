@@ -160,3 +160,71 @@ footer .website-logo {
 .soc-meds a {
   text-decoration: underline;
 }
+
+/* ACCREDITATIONS */
+
+.accreditations-container {
+  height: 5rem;
+  background-color: rgb(255, 206, 46);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2.5rem;
+}
+
+.accreditations-container > img {
+  max-height: 4rem;
+}
+
+.cebu-pacific-logo {
+  max-width: calc(((100% / 19.25) * 4.5) - 2rem);
+}
+
+.phil-airlines-logo {
+  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
+}
+
+.twogo-logo {
+  max-width: calc(((100% / 19.25) * 2.25) - 2rem);
+}
+
+.love-the-phil-logo {
+  max-width: calc(((100% / 19.25) * 2.25) - 2rem);
+}
+
+.bdo-logo {
+  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
+}
+
+.kku-travel-logo {
+  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
+}
+
+.accreditations-gradient-top {
+  height: 1.5rem;
+  background-color: hsl(56, 100%, 89%);
+  background-image: linear-gradient(
+      -135deg,
+      transparent 75%,
+      rgb(255, 77, 71) 75%
+    ),
+    linear-gradient(135deg, transparent 75%, rgb(255, 77, 71) 75%),
+    linear-gradient(-45deg, transparent 75%, rgb(255, 77, 71) 75%),
+    linear-gradient(45deg, transparent 75%, rgb(255, 77, 71) 75%);
+  background-size: 3rem 3rem;
+}
+
+.accreditations-gradient-bottom {
+  height: 1.5rem;
+  background-color: rgb(255, 77, 71);
+  background-image: linear-gradient(
+      -45deg,
+      transparent 75%,
+      hsl(56, 100%, 89%) 75%
+    ),
+    linear-gradient(45deg, transparent 75%, hsl(56, 100%, 89%) 75%),
+    linear-gradient(-135deg, transparent 75%, hsl(56, 100%, 89%) 75%),
+    linear-gradient(135deg, transparent 75%, hsl(56, 100%, 89%) 75%);
+  background-size: 3rem 3rem;
+}

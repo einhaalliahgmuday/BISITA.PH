@@ -155,44 +155,6 @@ main {
   height: calc(100vh - 6rem);
 }
 
-.accreditations-container {
-  height: 6rem;
-  background-color: rgb(255, 196, 0);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem 2.5rem;
-}
-
-.accreditations-container > img {
-  max-height: 4rem;
-}
-
-.cebu-pacific-logo {
-  max-width: calc(((100% / 19.25) * 4.5) - 2rem);
-}
-
-.phil-airlines-logo {
-  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
-}
-
-.twogo-logo {
-  max-width: calc(((100% / 19.25) * 2.25) - 2rem);
-}
-
-.love-the-phil-logo {
-  max-width: calc(((100% / 19.25) * 2.25) - 2rem);
-}
-
-.bdo-logo {
-  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
-}
-
-.kku-travel-logo {
-  max-width: calc(((100% / 19.25) * 3.25) - 2rem);
-}
-
 .section-bisita-de-mindoro {
   position: relative;
   background: url("../media/home/home_bg.png");
