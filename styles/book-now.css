@@ -1,0 +1,76 @@
+main {
+  background-image: url(../media/book_now/book_now_bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 2rem 3rem;
+}
+
+.container {
+  position: relative;
+  max-width: 29rem;
+  background-color: rgba(255, 255, 255, 0.966);
+  padding: 1.5rem;
+  border-radius: 30px;
+  margin-left: auto;
+}
+
+.container .logo {
+  height: 3rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.input-100 {
+  width: 100%;
+}
+
+.form input,
+.form select {
+  display: block;
+  background-color: peachpuff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: white;
+  outline: none;
+}
+
+.form .input-box {
+  width: 100%;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 1;
+}
+
+.column input,
+.column select {
+  width: 100%;
+}
+
+form button {
+  outline: none;
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+  background-color: yellow;
+  cursor: pointer;
+}
