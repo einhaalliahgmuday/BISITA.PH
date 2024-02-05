@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #202020, #424242, #737373);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav a:hover {
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: rgb(255, 208, 79);
+}
+.logo {
+    width: 250px;
+}
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.book-now {
+    padding: 30px 40px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.nav-links li .black {
+    color: #000;
+}
+.nav-links li .current-page {
+    color: rgb(255, 208, 79);
+}
+.book-now {
+    background-color: #fff;
+    color: black;
+    padding: 1.5rem 2.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.book-now:hover {
+    color: #fff;
+    background-color: rgb(255, 208, 79);
+}
+.container-content {
+    position: absolute;
+    display: flex;
+    top: 15%;
+}
+.content-1, .content-2 {
+    flex: 1;
+}
+.content-1 {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 8%;
+    top: 15%;
+    color: #fff;
+}
+.content-1 h1 {
+    margin-left: 10%;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 6rem;
+}
+.content-1 p {
+    font-size: 16px;
+    margin-top: -10%;
+    font-weight: lighter;
+    margin-left: 10%;
+}
+.container-button {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.btn-mark {
+    width: 80%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 13px 20px;
+    border-color: #fff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fa-bookmark {
+    margin-left: 10px;
+    width: 20%;
+    font-size: 47px;
+    color: rgb(255, 208, 79);
+}
+.background-video {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+.content-2 {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    color: #fff;
+    
+}
+.oblong-box {
+    width: 300px;
+    height: 50px;
+    border: 2px solid;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #fff;
+    margin-left: 45%;
+}
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.search-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.search-icon {
+    font-size: 25px;
+    margin-right: -10px;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40%;
+    margin-left: 20%;
+}
+.gallery-item {
+    text-align: center;
+}
+.gallery-item p {
+    margin-top: -23%;
+}
+.gallery-item a {
+    text-decoration: none;
+    color: #fff;
+}
+.gallery-container img {
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover; /* Maintain aspect ratio */
+    text-decoration: none;
+}
+
+
+.footer {
+    position: relative;
+    background-color: #fff;
+    /* background: linear-gradient(to right, #202020, #424242, #737373); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+}
+footer .website-logo {
+    height: 4rem;
+}
+
+.copyright {
+    color: black;
+    font-style: italic;
+}
+
+.soc-meds {
+    color: #a5a5a5;
+}
+
+.soc-meds li {
+    display: inline-block;
+}
+
+.soc-meds li:not(:first-child)::before {
+    content: "\2022";
+    display: inline-block;
+    vertical-align: middle;
+    color: #a5a5a5;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+.soc-meds a {
+    text-decoration: underline;
+}
+
+ul .suggestions {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .background-video {
+        width: 100%;
+        height: auto;
+    }
+}
