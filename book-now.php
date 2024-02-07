@@ -1,3 +1,13 @@
+<?php
+  session_start();
+
+  $message = null;
+
+  if (isset($_SESSION["messages"])) {
+    $message = array_pop($_SESSION["messages"]);
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,21 +26,26 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Destinations</a></li>
-          <li><a href="#">Offers</a></li>
+          <li><a  href="home.html">Home</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="offers.html">Offers</a></li>
           <li><a href="#">About us</a></li>
           <li>
-            <a class="current-page" class="book-now" href="#">BOOK NOW</a>
+            <a class="book-now" href="#">BOOK NOW</a>
           </li>
         </ul>
       </nav>
     </header>
 
+      <div style="color: black; width: 100%; position: absolute; top: 4rem;">
+        <?php if ($message != null) echo $message; ?>
+      </div>
+      {% endif %} {% endwith%}
+
     <main>
       <section class="container">
         <img class="logo" src="media/logos/BisitaLogo.png" alt="BisitaLogo" />
-        <form action="#" class="form">
+        <form action="php_servers/book_now_server.php" method="POST" class="form">
           <div class="input-box">
             <label for="email">Email: </label>
             <input
@@ -43,46 +58,28 @@
           </div>
 
           <div class="input-box">
-            <label for="from">From: </label>
-            <input
-              class="input-100"
-              type="from"
-              name="from"
-              id="from"
-              required
-            />
-          </div>
-
-          <div class="input-box">
-            <label>To:</label>
-            <select class="input-100" id="to" name="to" required>
-              <option value="blank"></option>
-              <option value="vista">Vista Aplaya</option>
-              <option value="puerto">Puerto Galera</option>
-              <option value="pola">Pola Heritage</option>
-              <option value="marco">Marco Polo</option>
-              <option value="lasersitas">Lasersitas Casitas</option>
-              <option value="filipiniana">Filipianiana</option>
-              <option value="infinity">Infinity Resort</option>
+            <label for="destination">To:</label>
+            <select class="input-100" id="destination" name="destination" required>
+              <option value=""></option>
+              <option value="Vista Aplaya">Vista Aplaya</option>
+              <option value="Puerto Galera">Puerto Galera</option>
+              <option value="Pola Heritage">Pola Heritage</option>
+              <option value="Marco Polo">Marco Polo</option>
+              <option value="Lasersitas Casitas">Lasersitas Casitas</option>
+              <option value="Filipiniana">Filipiniana</option>
+              <option value="Infinity Resort">Infinity Resort</option>
             </select>
           </div>
 
           <div class="column">
             <div class="input-box">
-              <label>Date: </label>
-              <input type="date" name="date" id="date" required />
+              <label>Check In: </label>
+              <input type="date" name="check-in" id="check-in" required />
             </div>
 
             <div class="input-box">
-              <label>Duration: </label>
-              <select id="duration" name="duration" required>
-                <option value="blank"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
+              <label>Check Out: </label>
+              <input type="date" name="check-out" id="check-out" required />
             </div>
           </div>
 
@@ -93,7 +90,7 @@
             </div>
             <div class="input-box">
               <label>Promo Code: </label>
-              <input type="promo" name="promo" id="promo" required />
+              <input type="promo" name="promo-code" id="promo"/>
             </div>
           </div>
 
@@ -117,5 +114,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="scripts/book-now.js"></script>
   </body>
 </html>
