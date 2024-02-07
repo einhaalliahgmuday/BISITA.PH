@@ -161,37 +161,37 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "FILIPINIANA CALAPAN",
       description:
         "A Taste of Urban Living. A 60-hectare prime residential commercial landmark in Calapan City, an integral part of the 100-hectare foremost property development.",
-      videoUrl: "../DESTINATIONS/Videos/Filipiniana Calapan.mp4",
+      videoUrl: "../media/destinations/videos/Marco Polo.mp4",
     },
     "marco polo": {
       title: "MARCO POLO",
       description:
         "Built in 1998 and last renovated in 2012, Marco Polo Davao Hotel boasts a timeless elegance that combines modern comforts with traditional Filipino hospitality.",
-      videoUrl: "../DESTINATIONS/Videos/Marco Polo.mp4",
+      videoUrl: "../media/destinations/videos/Marco Polo.mp4",
     },
     "puerto galera": {
       title: "PUERTO GALERA",
       description:
         "Offer Complete Amenities for a Convenient Stay. Book You Hotel Room with Us Today! Enjoy Quality Hotel Accommodations while You Are Away from home.",
-      videoUrl: "../DESTINATIONS/Videos/Puerto Galera.mp4",
+      videoUrl: "../media/destinations/videos/Puerto Galera.mp4",
     },
     "infinity resort": {
       title: "INFINITY RESORT",
       description:
         "Infinity Resort and Spa is the finest and most recognized boutique resort in Puerto Galera, Orientad Mindoro. Situated in a 2-hectare property, this resort is the premier travel destination that offers great package deals resulting to an endless opportunity of the enchanting exploration.",
-      videoUrl: "../DESTINATIONS/Videos/Infinity Resort.mp4",
+      videoUrl: "../media/destinations/videos/Infinity Resort.mp4",
     },
     "lasersita resort": {
       title: "LASERSITA CASITAS",
       description:
         "The choice Water Spa Resort destination in Mansalay, Oriental Mindoro integrating the values of nature and people while showcasing the best features of our resort.",
-      videoUrl: "../DESTINATIONS/Videos/Lasersita Casitas.mp4",
+      videoUrl: "../media/destinations/videos/Lasersita Casitas.mp4",
     },
     "vista aplaya": {
       title: "VISTA APALAYA",
       description:
         "Vista Aplaya is a family-owned beachfront resort in Anilao, Batangas that offers relaxation and recreational. Its infinity pool that seems to stretch to the seas and its prime dive spot location are not to miss!",
-      videoUrl: "../DESTINATIONS/Videos/Vista Aplaya.mp4",
+      videoUrl: "../media/destinations/videos/Vista Aplaya.mp4",
     },
   };
 });

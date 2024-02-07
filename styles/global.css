@@ -119,6 +119,8 @@ header nav a:hover {
   background-color: rgb(255, 208, 79);
 }
 
+main {max-width: 1480px;}
+
 footer {
   background-color: #fff;
   display: flex;

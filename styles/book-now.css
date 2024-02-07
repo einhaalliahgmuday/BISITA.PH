@@ -1,9 +1,18 @@
+.book-now {
+  background-color: rgb(255, 208, 79);
+  color: white;
+}
+
 main {
   background-image: url(../media/book_now/book_now_bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  height: calc(100vh - 13.5rem);
   padding: 2rem 3rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .container {
@@ -28,7 +37,6 @@ main {
   width: 100%;
   margin-top: 1rem;
   color: black;
-  font-size: 0.8rem;
 }
 
 .input-100 {
@@ -43,6 +51,7 @@ main {
   border-radius: 6px;
   border: white;
   outline: none;
+  font: inherit;
 }
 
 .form .input-box {

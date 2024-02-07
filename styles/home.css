@@ -8,6 +8,7 @@ main {
 .primary-section {
   position: relative;
   height: calc(100vh - 6rem);
+  max-height: 825px;
 }
 
 .video-bg {
