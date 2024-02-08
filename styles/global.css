@@ -28,7 +28,7 @@ p {
 img,
 video {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -119,7 +119,9 @@ header nav a:hover {
   background-color: rgb(255, 208, 79);
 }
 
-main {max-width: 1480px;}
+main {
+  max-width: 1480px;
+}
 
 footer {
   background-color: #fff;
