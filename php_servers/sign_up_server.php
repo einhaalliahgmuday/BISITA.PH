@@ -19,7 +19,7 @@ if (isset($_POST['regbtn']) != '') {
     $email = mysqli_real_escape_string($conn, $_POST['regemail']);
     $password = mysqli_real_escape_string($conn, $_POST['regpassword']);
 
-    $checkEmailQuery = "SELECT * FROM bisita_users WHERE email = '$email'";
+    $checkEmailQuery = "SELECT * FROM user WHERE email = '$email'";
     $checkEmailResult = mysqli_query($conn, $checkEmailQuery);
 
     if (mysqli_num_rows($checkEmailResult) != 0) {
@@ -28,14 +28,13 @@ if (isset($_POST['regbtn']) != '') {
                 window.history.back();
               </script>";
     } else {
-        $sql = "INSERT INTO bisita_users (`username`, `email`, `user_password`) VALUES ('$username', '$email', '$password')";
+        $sql = "INSERT INTO user (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')";
         $result = mysqli_query($conn, $sql);
 
         if ($result) {
-			//home.html 
             echo "<script>
                     alert('Registered Complete!');
-                    window.location.href = '.html';
+                    window.location.href = '../home.html';
                   </script>";
         } else {
             echo "Error: " . mysqli_error($conn);

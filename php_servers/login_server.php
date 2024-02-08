@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $loginUsername = $_POST["logusername"];
     $loginPassword = $_POST["logpassword"]; 
 
-    $sql = "SELECT username, email, user_password FROM bisita_users WHERE username='$loginUsername' AND user_password='$loginPassword'";
+    $sql = "SELECT username, email, password FROM user WHERE username='$loginUsername' AND password='$loginPassword'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -26,18 +26,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         $_SESSION['username'] = $row['username'];
         $_SESSION['email'] = $row['email'];
-        $_SESSION['user_password'] = $row['user_password'];
+        $_SESSION['user_password'] = $row['password'];
        
     
         echo '<pre>';
         var_dump($_SESSION);
         echo '</pre>';
     
-		//HOME
-        header("Location: .html");
+        header("Location: ../home.html");
         exit();
-    } else {
-        
+    } else {        
         echo "
         <script>
 			alert('Incorrect Username or Password. Please try again!');
