@@ -1,0 +1,125 @@
+				body, html {
+	              margin: 0;
+				  padding: 0;
+				  height: 100%;
+				  box-sizing: border-box;
+				 font-family: 'Poppins', sans-serif;
+				}
+				a{
+					text-decoration: none;
+					color: green;
+				}
+				#video-background {
+				  position: fixed;
+				  top: 0;
+				  right: 0;
+				  bottom: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%;
+				  object-fit: cover;
+				  z-index: -1;
+				}
+				.content {
+				  position: relative;
+				  z-index: 1;
+				  text-align: center;
+				  color: white;
+				  padding: 20px;
+				}
+				.account-container {
+					text-align: center;
+					padding: 50px;
+					margin-top: 50px;
+				}
+				.form-container{
+					background: #fff;
+					width: 320px;
+					height: 400px;
+					position: relative;
+					text-align: center;
+					padding: 20px 0;
+					margin: auto;
+					box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+					overflow: hidden;
+					border-radius: 30px;
+				}
+				.form-container span{
+					font-weight: bold;
+					padding: 0 10px;
+					color: green;
+					cursor: pointer;
+					width: 100px;
+					display: inline-block;
+				}
+				.form-btn{
+					display: inline-block;
+				}
+				.form-container form{
+					max-width: 300px;
+					padding: 0 20px;
+					position: absolute;
+					top: 130px;
+					transition: transform 1s;
+				}
+				form input{
+					width: 90%;
+					height: 30px;
+					margin: 10px 0;
+					padding: 0 2px;
+					border: 1px solid #ccc;
+				}
+				form .btn{
+					width: 90%;
+					border: none;
+					cursor: pointer;
+					margin: 10px 0;
+				}
+				form .btn:focus{
+					outline: none;
+				}
+				#LoginForm{
+                    padding: 10px;
+					left: -300px;
+					
+				}
+				#RegForm{
+					left: 0px;
+				}
+				form a{
+					font-size: 12px;
+				}
+				#Indicator{
+					width: 120px ;
+					border: none;
+					background: green;
+					height: 3px;
+					margin-top: 8px;
+					transform: translateX(70px);
+					transition: transform 1s;
+				}
+				.col-2{
+					flex-basis: 50%;
+					min-width: 300px;
+				}
+				.col-2 img{
+					max-width: 100%;
+					padding: 50px 0;
+				}
+				.col-2 h1{
+					font-size: 50px;
+					line-height: 60px;
+					margin: 25px 0;
+				}
+				.btn{
+					display: inline-block;
+					background: green;
+					color: white;
+					padding: 8px 30px;
+					margin: 30px 0;
+					border-radius: 30px;
+					transition: background 0.5s;
+				}
+				.btn:hover{
+					background: #006B57;
+				}
