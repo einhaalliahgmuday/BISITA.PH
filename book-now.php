@@ -1,6 +1,10 @@
 <?php
   session_start();
 
+  if (!isset($_SESSION["username"])) {
+    header("Location: sign-up.html");
+  }
+
   $message = null;
 
   if (isset($_SESSION["messages"])) {
@@ -21,7 +25,7 @@
 
   <body>
     <header>
-      <a href=""
+      <a href="home.html"
         ><img class="website-logo" src="media/logos/BisitaLogo.png" alt="logo"
       /></a>
       <nav>
@@ -29,19 +33,13 @@
           <li><a  href="home.html">Home</a></li>
           <li><a href="destinations.html">Destinations</a></li>
           <li><a href="offers.html">Offers</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="about-us.html">About us</a></li>
           <li>
-            <a class="book-now" href="#">BOOK NOW</a>
+            <a class="book-now" href="book-now.php">BOOK NOW</a>
           </li>
         </ul>
       </nav>
     </header>
-
-      <div style="color: black; width: 100%; position: absolute; top: 4rem;">
-        <?php if ($message != null) echo $message; ?>
-      </div>
-      {% endif %} {% endwith%}
-
     <main>
       <section class="container">
         <img class="logo" src="media/logos/BisitaLogo.png" alt="BisitaLogo" />
@@ -100,9 +98,8 @@
         </form>
       </section>
     </main>
-
     <footer>
-      <a href=""
+      <a href="home.html"
         ><img class="website-logo" src="media/logos/BisitaLogo2.png" alt="logo"
       /></a>
       <p class="copyright">© Copyright 2024, SamSan Tech.</p>
