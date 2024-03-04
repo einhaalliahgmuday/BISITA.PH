@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,11 +18,16 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
-          <li><a class="current-page" href="offers.html">Offers</a></li>
-          <li><a href="about-us.html">About us</a></li>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="destinations.php">Destinations</a></li>
+          <li><a class="current-page" href="offers.php">Offers</a></li>
+          <li><a href="about-us.php">About us</a></li>
           <li><a class="book-now" href="book-now.php">BOOK NOW</a></li>
+          <?php if (isset($_SESSION["username"])) { ?>
+          <li><a href="logout.php">Logout</a></li>
+          <?php } else { ?>
+          <li><a href="sign-up.html">Login</a></li>
+          <?php } ?>
         </ul>
       </nav>
     </header>

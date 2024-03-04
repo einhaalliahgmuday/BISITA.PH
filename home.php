@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,11 +18,16 @@
       /></a>
       <nav>
         <ul>
-          <li><a class="current-page" href="home.html">Home</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
-          <li><a href="offers.html">Offers</a></li>
-          <li><a href="about-us.html">About us</a></li>
+          <li><a class="current-page" href="home.php">Home</a></li>
+          <li><a href="destinations.php">Destinations</a></li>
+          <li><a href="offers.php">Offers</a></li>
+          <li><a href="about-us.php">About us</a></li>
           <li><a class="book-now" href="book-now.php">BOOK NOW</a></li>
+          <?php if (isset($_SESSION["username"])) { ?>
+          <li><a href="logout.php">Logout</a></li>
+          <?php } else { ?>
+          <li><a href="sign-up.html">Login</a></li>
+          <?php } ?>
         </ul>
       </nav>
     </header>
@@ -43,17 +52,20 @@
               </span>
             </p>
           </div>
-          <a class="explore-now-link" href="">Explore Now</a>
+          <a class="explore-now-link" href="destinations.php">Explore Now</a>
         </div>
       </section>
       <section class="section-features">
-        <a class="feature featured-travels" href="">
+        <a class="feature featured-travels" href="#section-bisita-de-mindoro">
           <p>Featured Travels</p>
         </a>
-        <a class="feature where-to-go" href="">
+        <a class="feature where-to-go" href="destinations.php">
           <p>Where To Go</p>
         </a>
-        <a class="feature food-delicacies" href="">
+        <a
+          class="feature food-delicacies"
+          href="https://travelorientalmindoro.ph/"
+        >
           <p>Food Delicacies</p>
         </a>
       </section>
@@ -86,7 +98,7 @@
         </div>
         <div class="accreditations-gradient-bottom"></div>
       </section>
-      <section class="section-bisita-de-mindoro">
+      <section class="section-bisita-de-mindoro" id="section-bisita-de-mindoro">
         <div class="section-bisita-de-mindoro-content">
           <h2 class="bisita-de-mindoro-text">
             Bisita <span class="yellow-font">de</span> Mindoro
@@ -147,7 +159,7 @@
       </section>
     </main>
     <footer>
-      <a href="home.html"
+      <a href="home.php"
         ><img class="website-logo" src="media/logos/BisitaLogo2.png" alt="logo"
       /></a>
       <p class="copyright">© Copyright 2024, SamSan Tech.</p>

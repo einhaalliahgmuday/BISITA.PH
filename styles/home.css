@@ -232,3 +232,17 @@ main {
 .bisita-church {
   background-image: url(../media/home/home_bisita4.jpg);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-bisita-de-mindoro {
+    background-size: cover;
+    background-attachment: local;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-bisita-de-mindoro {
+    background-size: cover;
+    background-attachment: local;
+  }
+}

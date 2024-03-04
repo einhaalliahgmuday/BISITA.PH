@@ -263,3 +263,30 @@ footer .website-logo {
   z-index: 2;
   transition: opacity 0.3s ease;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 6px;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+}

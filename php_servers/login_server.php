@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         var_dump($_SESSION);
         echo '</pre>';
     
-        header("Location: ../home.html");
+        header("Location: ../home.php");
         exit();
     } else {        
         echo "

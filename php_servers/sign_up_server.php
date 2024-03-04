@@ -34,7 +34,7 @@ if (isset($_POST['regbtn']) != '') {
         if ($result) {
             echo "<script>
                     alert('Registered Complete!');
-                    window.location.href = '../home.html';
+                    window.location.href = '../home.php';
                   </script>";
         } else {
             echo "Error: " . mysqli_error($conn);

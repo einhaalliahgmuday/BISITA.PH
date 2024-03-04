@@ -8,8 +8,8 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  height: calc(100vh - 13.5rem);
-  padding: 2rem 3rem;
+  height: calc(100vh - 6rem);
+  padding: 3rem 3rem;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -26,6 +26,7 @@ main {
 
 .container .logo {
   height: 3rem;
+  width: auto;
 }
 
 .form {

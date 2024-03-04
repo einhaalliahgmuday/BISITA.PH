@@ -72,12 +72,12 @@ p {
 }
 
 .team-card .card {
-  width: 200px;
-  height: 200px;
+  width: 12rem;
+  height: 12rem;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 2rem;
   box-shadow: 0 12px 10px -10px rgba(0, 14, 19, 0.994);
-  padding: 8px;
+  padding: 0.5rem;
   margin: 6rem auto 4rem;
 }
 
@@ -88,10 +88,10 @@ p {
 
 .team-card .card .img-sect img {
   position: relative;
-  top: -80px;
-  left: -9px;
-  width: 200px;
-  height: 200px;
+  top: -6rem;
+  left: -0.6rem;
+  width: 12rem;
+  height: 12rem;
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
@@ -100,10 +100,39 @@ p {
 
 .team-card .content {
   position: relative;
-  top: -65px;
+  top: -4rem;
 }
 
 .team-card .content h4,
 .team-card .content p {
   cursor: default;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .team-card {
+    gap: 1rem;
+  }
+
+  .container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .team-card .card {
+    margin: 3rem auto;
+  }
+
+  .team-card .card:first-child {
+    margin: 7rem auto 3rem;
+  }
+
+  .container {
+    width: 40%;
+  }
 }
